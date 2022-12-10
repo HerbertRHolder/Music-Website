@@ -1,0 +1,55 @@
+// TODO as the screen gets smaller I need the sidebar to increase in width
+.cont {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: .5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+      "sidebar nav nav nav"
+      "sidebar main main main"
+      "sidebar content1 content2 content2"
+      "sidebar content1 content2 content2";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+  }
+
+  main {
+    background: #84ffff;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #sidebar {
+    background: #18ffff;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content1 {
+    background: #6fffd2;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content2 {
+    background: #64ffda;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+  }

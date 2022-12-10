@@ -1,0 +1,30 @@
+
+nav.navb {
+    background: #a7ffeb;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    
+    .menu-cont {
+        width: 100px;
+        height: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .bell-cont {
+            width: fit-content;
+            height: fit-content;
+            font-size: 24px;
+        }
+        .icon-cont {
+            width: fit-content;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+    }
+   
+  }

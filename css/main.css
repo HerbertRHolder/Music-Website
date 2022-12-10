@@ -1,0 +1,239 @@
+:root {
+  --prime: #000;
+  --font-color-1: #ffffff;
+  --font-color-2: #000000;
+  --footer-padding: 2rem;
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: "sidebar nav nav nav" "sidebar main main main" "sidebar content1 content2 content2" "sidebar content1 content2 content2";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+}
+
+main {
+  background: #84ffff;
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#sidebar {
+  background: #18ffff;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content1 {
+  background: #6fffd2;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content2 {
+  background: #64ffda;
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+a {
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+#sidebar {
+  background: #18ffff;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+nav.navb {
+  background: #a7ffeb;
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+nav.navb .menu-cont {
+  width: 100px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav.navb .menu-cont .bell-cont {
+  width: fit-content;
+  height: fit-content;
+  font-size: 24px;
+}
+nav.navb .menu-cont .icon-cont {
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+#content1 {
+  background: #6fffd2;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content2 {
+  background: #64ffda;
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#slide {
+  background: #84ffff;
+  grid-area: slide;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.glide, .glide__track, .glide__slides {
+  height: fit-content;
+}
+
+#glide1 .glide__slide {
+  height: 280px;
+  line-height: 100px;
+}
+
+.glide__slide {
+  border: 1px solid black;
+  text-align: center;
+}
+
+button.glide__arrow {
+  background-color: red;
+  border: none;
+  font-size: 11px;
+}
+
+button.glide__arrow--left {
+  left: 5px;
+}
+
+button.glide__arrow--right {
+  right: 5px;
+}
+
+.footer {
+  padding: var(--footer-padding);
+  width: 100%;
+  min-height: 300px;
+  background-color: #000000;
+  margin-top: auto;
+  color: var(--font-color-1);
+}
+.footer-mission-cont {
+  width: 200px;
+  min-height: fit-content;
+  margin-left: 1rem;
+}
+.footer-links-cont {
+  width: 600px;
+  min-height: fit-content;
+}
+.footer-links-cont .about, .footer-links-cont .social {
+  width: 107px;
+  height: 112px;
+}
+.footer-links-cont .social .icons {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.footer-legal-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+/* For 2K & 4K resolutions */
+@media screen and (max-width: 550px) {
+  .cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1.6fr 1.2fr 1.2fr;
+    grid-template-areas: "nav" "main" "content1" "content2" "content2";
+  }
+  #sidebar {
+    grid-area: none;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    top: 100%;
+    transform: translateY(-72px);
+  }
+  main {
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+  .glide {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .glide__track {
+    width: 100%;
+    height: 100%;
+  }
+  #glide1 .glide__slide {
+    width: 300px;
+    height: 70px;
+    line-height: 100px;
+  }
+}
+.debug-ol {
+  outline: dashed red;
+}
+
+.debug-bg {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

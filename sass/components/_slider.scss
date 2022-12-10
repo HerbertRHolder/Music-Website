@@ -1,0 +1,32 @@
+#slide {
+    background: #84ffff;
+  grid-area: slide;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.glide, .glide__track, .glide__slides {
+  height: fit-content;
+}
+
+#glide1 .glide__slide {
+  height: 280px;
+  line-height: 100px;
+}
+
+.glide__slide {
+  border: 1px solid black;
+  text-align: center;
+}
+
+button.glide__arrow {
+  background-color: red;
+  border: none;
+  font-size: 11px;
+}
+button.glide__arrow--left {
+  left: 5px;
+}
+button.glide__arrow--right {
+  right: 5px;
+}

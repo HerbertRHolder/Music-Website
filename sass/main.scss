@@ -1,0 +1,19 @@
+@use "config/_variables.scss";
+@use "base/base";
+@use "theme/theme";
+@use "layout/layout";
+@use 'components/buttons';
+@use 'components/sidebar';
+@use 'components/navigate';
+@use 'components/content1';
+@use 'components/content2';
+@use 'components/slider';
+@use 'components/footer';
+@use 'components/breakpoints';
+
+.debug-ol {
+    outline: dashed red;
+}
+.debug-bg {
+    background-color: blue;
+}
