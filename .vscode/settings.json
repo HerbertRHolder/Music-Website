@@ -1,0 +1,10 @@
+{
+    "editor.fontSize": 15,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.cursorBlinking":true,
+    "terminal.integrated.tabs.enabled":true,
+    "terminal.integrated.enableBell":true,
+    "terminal.integrated.drawBoldTextInBrightColors":true
+
+}

@@ -113,6 +113,23 @@ nav.navb .menu-cont .icon-cont {
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
+#content1 .list-scroller-cont {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  background-color: beige;
+}
+#content1 .list-scroller-cont .list-img-cont {
+  width: 100px;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
 
 #content2 {
   background: #64ffda;
